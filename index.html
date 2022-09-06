@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<body>
+    <div class="spinner"></div>
+</body>
+
+<style>
+    
+body {
+  background: black;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -8.1px;
+  white-space: pre;
+
+}
+
+.spinner {
+  color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.spinner:after {
+  animation: changeContentt .8s linear infinite;
+  display: block;
+  content: "⠉⠉";
+  font-size: 80px;
+ 
+}
+
+@keyframes changeContentt {
+  
+  8%  { content: "⠈⠙"; }
+  16% { content: "    ⠹"; }
+  25% { content: "    ⢸"; }
+  34% { content: "    ⣰"; }
+  42% { content: "⢀⣠"; }
+  50% { content: "⣀⣀"; }
+  59% { content: "⣄⡀"; }
+  67% { content: "⣆    "; }
+  75% { content: "⡇    "; }
+  84% { content: "⠏    "; }
+  92% { content: "⠋⠁"; }
+ 
+}
+
+</style>
